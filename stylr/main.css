@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content :space-between;
+    align-items: center;
+ flex-wrap: wrap;
+ gap: 3px;
+}
+.container .box{
+
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+   
+   
+}
+.animated{
+    animation: animated 0.9s infinite ease-in-out;
+}
+
+@keyframes animated{
+    0%{background-color: yellow;
+
+    }
+    25%{
+    background-color: brown;
+    }
+    50%{
+        background-color: gold;
+    }
+    75%{
+        background-color: aqua;
+    }
+    100%{
+            background-color: blue;
+    }
+}
